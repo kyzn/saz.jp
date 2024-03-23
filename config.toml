@@ -1,0 +1,14 @@
+baseURL = "http://saz.jp/"
+title = "Saz.JP"
+theme = "etch"
+languageCode = "ja-JP"
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+  description = "トルコの弦楽器サズ"
+  highlight = true
+
+[markup.goldmark.renderer]
+  unsafe = true
