@@ -38,3 +38,6 @@ Sessionx.vim
 
 # More hugo files
 .hugo_build.lock
+
+# More for MAC
+.DS_Store
