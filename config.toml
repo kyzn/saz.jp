@@ -1,0 +1,35 @@
+baseURL = "https://saz.jp"
+title = "saz.jp"
+theme = "etch"
+languageCode = "ja-JP"
+
+[params]
+  description = "トルコの弦楽器サズについて"
+  copyright = "<center><a href=\"/\">© 2024 ヤザン・クワンチ</a> · <a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\">CC BY 4.0</a></center>"
+  dark = "auto"
+  highlight = true
+
+[menu]
+  [[menu.main]]
+    identifier = "更新"
+    name = "更新"
+    title = "更新"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "楽器"
+    name = "楽器"
+    title = "楽器"
+    url = "/楽器/"
+    weight = 20
+
+[permalinks]
+  posts = "/:title/"
+
+[markup.goldmark.renderer]
+  # Allow HTML in Markdown
+  unsafe = true
+
+  [markup.tableOfContents]
+    ordered = true
