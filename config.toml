@@ -24,6 +24,13 @@ languageCode = "ja-JP"
     url = "/楽器/"
     weight = 20
 
+  [[menu.main]]
+    identifier = "曲"
+    name = "曲"
+    title = "曲"
+    url = "/曲/"
+    weight = 30
+
 [permalinks]
   posts = "/:title/"
 
