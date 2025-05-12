@@ -11,9 +11,9 @@ languageCode = "ja-JP"
 
 [menu]
   [[menu.main]]
-    identifier = "更新"
-    name = "更新"
-    title = "更新"
+    identifier = "ブログ"
+    name = "ブログ"
+    title = "ブログ"
     url = "/"
     weight = 10
 
