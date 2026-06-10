@@ -1,7 +1,7 @@
 baseURL = "https://saz.jp"
 title = "saz.jp"
 theme = "etch"
-languageCode = "ja-JP"
+locale = "ja-JP"
 
 [params]
   description = "トルコの弦楽器サズについて"
