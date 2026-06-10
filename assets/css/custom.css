@@ -155,19 +155,83 @@ header#banner.site-nav .nav-links .nav-social svg {
     height: 18px;
 }
 
+header#banner.site-nav .nav-socials {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Mobile: hide inline links, show ⋯ dropdown on the brand row */
+header#banner.site-nav .nav-menu {
+    display: none;
+}
+
 @media (max-width: 660px) {
     header#banner.site-nav .nav-inner {
         padding: 8px 14px;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
-    header#banner.site-nav .nav-brand {
-        margin-right: 0;
-        width: 100%;
     }
     header#banner.site-nav .nav-links {
-        font-size: 14px;
-        flex-wrap: wrap;
+        display: none;
+    }
+    header#banner.site-nav .nav-menu {
+        display: block;
+        margin-left: auto;
+    }
+    header#banner.site-nav .nav-menu summary {
+        list-style: none;
+        cursor: pointer;
+        color: var(--saz-accent);
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1;
+        padding: 2px 12px 6px;
+        border-radius: 6px;
+        user-select: none;
+    }
+    header#banner.site-nav .nav-menu summary::-webkit-details-marker {
+        display: none;
+    }
+    header#banner.site-nav .nav-menu[open] summary {
+        background: rgba(168, 90, 42, 0.12);
+    }
+    header#banner.site-nav .nav-drop {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 6px 18px 14px;
+        background: var(--saz-nav-bg);
+        backdrop-filter: saturate(180%) blur(16px);
+        -webkit-backdrop-filter: saturate(180%) blur(16px);
+        border-bottom: 1px solid var(--saz-nav-border);
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+    header#banner.site-nav .nav-drop a {
+        color: var(--saz-accent);
+        text-decoration: none;
+        font-size: 16px;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(168, 90, 42, 0.1);
+    }
+    header#banner.site-nav .nav-drop a.active {
+        color: var(--saz-nav-brand);
+        font-weight: 600;
+    }
+    header#banner.site-nav .nav-drop .nav-sep {
+        display: none;
+    }
+    header#banner.site-nav .nav-drop .nav-socials {
+        display: flex;
+        gap: 20px;
+        padding-top: 12px;
+    }
+    header#banner.site-nav .nav-drop .nav-socials a {
+        border-bottom: none;
+        padding: 4px 0;
+        line-height: 0;
     }
 }
 
