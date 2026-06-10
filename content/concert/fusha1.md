@@ -1,6 +1,7 @@
 ---
-title: "サズと旅するトルコ in 風舎by FUSHATHÉ"
+title: "2026/05/17 サズと旅するトルコ in 風舎by FUSHATHÉ"
 date: 2026-05-06T22:00:00+09:00
+event_date: 2026-05-17
 tags:
   - 演奏
 ---
@@ -22,4 +23,5 @@ tags:
 皆さまにお会いできるのを楽しみにしております🎵
 
 ![](/images/2026fushaposter1.png)  
-![](/images/2026fushaposter2.png)
+![](/images/2026fushaposter2.png)  
+<center>ポスター by <a href="https://www.instagram.com/p/DXrDu72ESdU/" target="_blank">風舎by FUSHATHÉ</a></center>

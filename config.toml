@@ -11,28 +11,32 @@ languageCode = "ja-JP"
 
 [menu]
   [[menu.main]]
-    identifier = "ブログ"
-    name = "ブログ"
-    title = "ブログ"
-    url = "/"
+    identifier = "お知らせ"
+    name = "お知らせ"
+    title = "演奏会やラジオ出演などの最新情報"
+    url = "/news/"
     weight = 10
 
   [[menu.main]]
     identifier = "楽器"
-    name = "楽器"
-    title = "楽器"
-    url = "/楽器/"
+    name = "サズについて"
+    title = "サズという楽器の紹介"
+    url = "/saz/"
     weight = 20
 
   [[menu.main]]
     identifier = "曲"
-    name = "曲"
-    title = "曲"
-    url = "/曲/"
+    name = "曲の紹介"
+    title = "演奏している曲の一覧"
+    url = "/songs/"
     weight = 30
 
-[permalinks]
-  posts = "/:title/"
+  [[menu.main]]
+    identifier = "プロフィール"
+    name = "プロフィール"
+    title = "演奏者について"
+    url = "/about/"
+    weight = 40
 
 [markup.goldmark.renderer]
   # Allow HTML in Markdown
