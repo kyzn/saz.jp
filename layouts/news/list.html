@@ -1,0 +1,27 @@
+{{ define "main" }}
+<header id="post-header"><h1>{{ .Title }}</h1></header>
+{{ .Content }}
+
+{{ $today := now.Format "2006-01-02" }}
+{{ $concerts := where site.RegularPages "Section" "concert" }}
+{{ $upcoming := where $concerts "Params.event_date" ">=" $today }}
+{{ $past := where $concerts "Params.event_date" "<" $today }}
+{{ $news := where site.RegularPages "Section" "news" }}
+
+<h3>これからの演奏会</h3>
+{{ if $upcoming }}
+{{ partial "title-list.html" ($upcoming.ByParam "event_date") }}
+{{ else }}
+<p><small>現在予定されている演奏会はありません。</small></p>
+{{ end }}
+
+<h3>過去の演奏会</h3>
+{{ with $past }}
+{{ partial "title-list.html" (.ByParam "event_date").Reverse }}
+{{ end }}
+
+<h3>その他のお知らせ</h3>
+{{ with $news }}
+{{ partial "title-list.html" .ByDate.Reverse }}
+{{ end }}
+{{ end }}
