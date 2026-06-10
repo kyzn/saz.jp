@@ -79,11 +79,11 @@ header#banner.site-nav {
 
 header#banner.site-nav .nav-inner {
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 10px 16px;
     display: flex;
     align-items: center;
-    gap: 16px;
-    flex-wrap: wrap;
+    gap: 12px;
+    flex-wrap: nowrap;
 }
 
 header#banner.site-nav .nav-brand {
@@ -102,9 +102,9 @@ header#banner.site-nav .nav-brand:hover {
 
 header#banner.site-nav .nav-links {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
-    gap: 4px 14px;
+    gap: 4px 10px;
     font-size: 15px;
 }
 
@@ -139,7 +139,7 @@ header#banner.site-nav .nav-links .nav-social {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 4px 6px;
+    padding: 4px 3px;
     border-bottom: 2px solid transparent;
     line-height: 0;
 }
@@ -155,10 +155,11 @@ header#banner.site-nav .nav-links .nav-social svg {
     height: 18px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
     header#banner.site-nav .nav-inner {
         padding: 8px 14px;
         gap: 10px;
+        flex-wrap: wrap;
     }
     header#banner.site-nav .nav-brand {
         margin-right: 0;
@@ -166,6 +167,7 @@ header#banner.site-nav .nav-links .nav-social svg {
     }
     header#banner.site-nav .nav-links {
         font-size: 14px;
+        flex-wrap: wrap;
     }
 }
 
