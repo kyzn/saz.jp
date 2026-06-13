@@ -285,6 +285,27 @@ header#banner.site-nav .nav-menu {
     }
 }
 
+/* ---- Real photos (shown uncut, with credit) ---- */
+main#content figure.saz-photo {
+    margin: 0 0 24px;
+}
+
+main#content figure.saz-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border: 1px solid var(--saz-nav-border);
+    border-radius: 6px;
+}
+
+main#content figure.saz-photo figcaption {
+    margin-top: 6px;
+    font-size: 12px;
+    text-align: right;
+    color: var(--saz-nav-fg);
+}
+
 /* ---- Hero image placeholder ---- */
 .saz-hero {
     width: 100%;

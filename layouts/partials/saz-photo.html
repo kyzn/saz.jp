@@ -1,0 +1,6 @@
+{{- $credit := .credit | default "星野安杏" -}}
+{{- $creditURL := .creditURL | default "https://linktr.ee/akihoshino.photo" -}}
+<figure class="saz-photo">
+    <img src="{{ .src | absURL }}" alt="{{ .alt | default "" }}" loading="lazy">
+    <figcaption>Photo by <a href="{{ $creditURL }}" target="_blank" rel="noopener">{{ $credit }}</a></figcaption>
+</figure>

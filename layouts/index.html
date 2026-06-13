@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ partial "saz-hero.html" "サズの写真がここに入ります（後ほど差し替え）" }}
+{{ partial "saz-photo.html" (dict "src" "/images/home.jpg" "alt" "サズを演奏するヤザン・クワンチ") }}
 
 {{ .Content }}
 {{ end }}
